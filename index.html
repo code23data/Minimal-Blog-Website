@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+		<header>
+			<h1>Blog Website</h1>
+		</header>
+		<nav>
+			<ul id="navbar">
+				<li><a href="#">Home</a></li>
+				<li><a href="#post-1">Post #1</a></li>
+				<li><a href="#post-2">Post #2</a></li>
+				<li><a href="#post-3">Post #3</a></li>
+			</ul>
+		</nav>
+
+		<main id="container">
+
+		<article id="post-1" class="blog-post">
+			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+            <div class="post-content">
+			<h2>Post #1</h2>
+				<p class="date">Published: February 5, 2026</p>
+				<p>
+					Plerumque improborum facta primo suspicio insequitur, dein sermo atque fama, tum accusator, tum iudex; Multi etiam, ut te consule, ipsi se indicaverunt. Quodsi qui satis sibi contra hominum conscientiam saepti esse et muniti videntur, deorum tamen horrent easque ipsas sollicitudines, quibus eorum animi noctesque diesque exeduntur, a diis inmortalibus supplicii causa.
+				</p>
+			<section class="comment-section">
+				<h3>Comments</h3>
+				<div class="comments-display" id="comments-1"></div>
+				<form class="comment-form" data-post-id="1">
+					<input type="text" placeholder="Your Name" required>
+					<textarea placeholder="Your Message" required></textarea>
+					<button type="submit">Post Comment</button>
+				</form>
+			</section>
+			</div>
+		</article>
+		<article id="post-2" class="blog-post">
+			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+			<div class="post-content">
+			<h2>Post #2</h2>
+				<p class="date">Published: February 5, 2026</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. At etiam Athenis, ut e patre audiebam facete et urbane.
+				</p>
+				<section class="comment-section">
+					<h3>Comments</h3>
+					<div class="comments-display" id="comments-2"></div>
+					<form class="comment-form" data-post-id="2">
+						<input type="text" placeholder="Your Name" required>
+						<textarea placeholder="Your Message" required></textarea>
+						<button type="submit">Post Comment</button>
+					</form>
+				</section>
+				</div>
+		</article>
+		<article id="post-3" class="blog-post">
+			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+			<div class="post-content">
+			<h2>Post #3</h2>
+				<p class="date">Published: February 5, 2026</p>
+				<p>
+					Unum secutus esset, nollem vituperatum. Iam in altera philosophiae parte. Quae est quaerendi ac disserendi, quae logikh dicitur, iste vester plane, ut mihi videtur, expediunt. Ut enim mortis metu omnis quietae vitae status perturbatur, et ut succumbere.
+				</p>
+				<section class="comment-section">
+					<h3>Comments</h3>
+					<div class="comments-display" id="comments-3"></div>
+					<form class="comment-form" data-post-id="3">
+						<input type="text" placeholder="Your Name" required>
+						<textarea placeholder="Your Message" required></textarea>
+						<button type="submit">Post Comment</button>
+					</form>
+				</section>
+				</div>
+		</article>
+		</main>
+    <script src="script.js"></script>
+  </body>
+</html>
