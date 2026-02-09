@@ -1,4 +1,4 @@
-# Simple Blog Website
+# Minimal Blog Website
 
 This is a clean, responsive, single-page blog template built with standard web technologies. It allows users to browse articles and interact through a local comment system.
 
