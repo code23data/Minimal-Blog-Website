@@ -12,6 +12,8 @@
 			<h1>Blog Website</h1>
 		</header>
 		<nav>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle" class="hamburger">&#9776;</label>
 			<ul id="navbar">
 				<li><a href="#">Home</a></li>
 				<li><a href="#post-1">Post #1</a></li>
@@ -23,7 +25,7 @@
 		<main id="container">
 
 		<article id="post-1" class="blog-post">
-			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+			<img src="https://placehold.co/800x400" alt="Tech workspace" />
             <div class="post-content">
 			<h2>Post #1</h2>
 				<p class="date">Published: February 5, 2026</p>
@@ -33,16 +35,18 @@
 			<section class="comment-section">
 				<h3>Comments</h3>
 				<div class="comments-display" id="comments-1"></div>
-				<form class="comment-form" data-post-id="1">
+				<form class="comment-form" data-post-id="1" novalidate>
 					<input type="text" placeholder="Your Name" required>
+					<span class="error-msg"></span>
 					<textarea placeholder="Your Message" required></textarea>
+					<span class="error-msg"></span>
 					<button type="submit">Post Comment</button>
 				</form>
 			</section>
 			</div>
 		</article>
 		<article id="post-2" class="blog-post">
-			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+			<img src="https://placehold.co/800x400" alt="Tech workspace" />
 			<div class="post-content">
 			<h2>Post #2</h2>
 				<p class="date">Published: February 5, 2026</p>
@@ -52,16 +56,18 @@
 				<section class="comment-section">
 					<h3>Comments</h3>
 					<div class="comments-display" id="comments-2"></div>
-					<form class="comment-form" data-post-id="2">
+					<form class="comment-form" data-post-id="2" novalidate>
 						<input type="text" placeholder="Your Name" required>
+						<span class="error-msg"></span>
 						<textarea placeholder="Your Message" required></textarea>
+						<span class="error-msg"></span>
 						<button type="submit">Post Comment</button>
 					</form>
 				</section>
 				</div>
 		</article>
 		<article id="post-3" class="blog-post">
-			<img src="https://via.placeholder.com/800x400" alt="Tech workspace" />
+			<img src="https://placehold.co/800x400" alt="Tech workspace" />
 			<div class="post-content">
 			<h2>Post #3</h2>
 				<p class="date">Published: February 5, 2026</p>
@@ -71,9 +77,11 @@
 				<section class="comment-section">
 					<h3>Comments</h3>
 					<div class="comments-display" id="comments-3"></div>
-					<form class="comment-form" data-post-id="3">
+					<form class="comment-form" data-post-id="3" novalidate>
 						<input type="text" placeholder="Your Name" required>
+						<span class="error-msg"></span>
 						<textarea placeholder="Your Message" required></textarea>
+						<span class="error-msg"></span>
 						<button type="submit">Post Comment</button>
 					</form>
 				</section>
