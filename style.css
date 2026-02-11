@@ -99,3 +99,65 @@ nav ul {
 		margin: 1rem;
 	}
 }
+
+.error-msg {
+	color: #dc3545;
+	font-size: 0.85rem;
+	margin-top: 4px;
+	display: block;
+	min-height: 1em;
+}
+
+.date {
+	color: var(--text-muted);
+	font-size: 0.9rem;
+	margin-bottom: 1.5rem;
+	display: block;
+	font-style: italic;
+}
+
+.comment-form button {
+	align-self: flex-start;
+	width: auto;
+	min-width: 160px;
+	height: 45px;
+	background-color: #0D3B66;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.comment-form button:hover {
+	background-color: #1a568d;
+	box-shadow: 0 4px 12px rgba(13, 59, 102, 0.2);
+}
+
+/* Hamburger & Mobile Menu */
+.hamburger {
+	display: none;
+	font-size: 28px;
+	cursor: pointer;
+	color: #333;
+}
+
+#menu-toggle { display: none; }
+
+@media (max-width: 768px) {
+	.hamburger { display: block; }
+	#navbar {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		background-color: #ecf0f1;
+		padding-bottom: 20px;
+	}
+	#menu-toggle:checked ~ #navbar {
+	display: flex;
+	}
+}
